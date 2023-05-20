@@ -1,0 +1,53 @@
+Algoritmo Soma de Matrizes
+
+	A: vetor[0...3][0...3] de inteiro
+	B: vetor[0...3][0...3] de inteiro
+	C: vetor[0...3][0...3] de inteiro
+	linha, coluna inteiro                                                           
+	
+Inicio
+	Escreva("Preenchendo a Matriz A")
+	para linha = 0 ate 3 faça
+		para coluna = 0 até 3 faça
+			Leia(A[linha][coluna], digite um numero para inserir na matriz)
+		fim-para
+	fim-para
+
+	Escreva("Preenchendo a Matriz B")
+	para linha = 0 ate 3 faça
+		para coluna = 0 até 3 faça
+			Leia(B[linha][coluna], digite um numero para inserir na matriz)
+		fim-para
+	fim-para
+
+	para linha = 0 ate 3 faça
+		para coluna = 0 ate 3 faça
+			C[linha][coluna] = A[linha][coluna] + B[linha][coluna]
+		fim para
+	fim para
+
+	// Exibindo as Matrizes 
+
+	Escreva("Conteudo da Matriz A")
+	para linha = 0 ate 3 faça
+		para coluna = 0 ate 3 faça
+			escreva("Matriz A",linha,coluna,A[linha][coluna]
+		fim para
+	fim para
+
+	Escreva("Conteudo da Matriz B")
+	para linha = 0 ate 3 faça
+		para coluna = 0 ate 3 faça
+			escreva("Matriz B",linha,coluna,A[linha][coluna]
+		fim para
+	fim para
+		
+
+	Escreva("Conteudo da Matriz C")
+	para linha = 0 ate 3 faça
+		para coluna = 0 ate 3 faça
+			escreva("Matriz C",linha,coluna,A[linha][coluna]
+		fim para
+	fim para
+		
+			

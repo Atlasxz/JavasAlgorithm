@@ -1,0 +1,68 @@
+0 - 20m³ - R$ 1,60 p/m³
+21 - 50m³ - R$ 2,90 p/m³
+50 - OO - R$ 4,60 p/m³
+
+Agua = digite quantos metros cubicos de agua vc gastou
+
+if agua <= 20
+	vlBase = agua * 1,60
+
+if agua (> 20 && <=50)
+	vlBase = agua * 2,90
+
+if agua (> 50)
+	vlBase = agua * 4,60
+
+if vlBase <= 100
+	vlTotal = vlBase * 0.05
+
+if vlBase > 100
+	vlTotal = vlBase * 1.10
+
+--------------------------------------------------------
+
+inicio
+
+importar dataimputstream
+importar IOException
+
+	real = cubic, vlBase = 0, vlTotal = 0, x, y, z
+	x = (real) 1,60
+	y = (real) 2,90
+	z = (real) 4.20
+
+	tente
+
+		escreva(Informe o valor de agua gasto em metros cubicos)
+
+	se(cubic <= 20) entao
+		vlBase = (real) (x * cubic)
+	fim-se
+
+	senao
+	  se((cubic > 20) e (cubic <=50) entao
+		vlBase = (real) (y * cubic)
+	   fim-se
+
+	senao
+	  se(cubic > 50) entao
+		vlBase = (real) (z * cubic)
+	  fim-se
+
+
+	se(vlBase <= 100) entao
+		vlTotal = (real) (vlBase * 0,05)
+	 senao
+	  se(vlBase > 100) entao
+		vlTotal = (real) (vlBase * 1,10)
+	 fim-se
+	pegar
+	fim-pegar
+
+fim
+
+
+
+
+
+ 
